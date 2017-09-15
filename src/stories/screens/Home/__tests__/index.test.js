@@ -1,11 +1,12 @@
 import React from "react";
-import BlankPage from "../index";
+import Home from "../index";
 // Note: test renderer must be required after react-native.
 import renderer from "react-test-renderer";
 
-const navigation = { state: jest.fn() };
+const navigation = { navigate: jest.fn() };
+const list = { map: jest.fn() };
 
 it("renders correctly", () => {
-	const tree = renderer.create(<BlankPage navigation={navigation} />).toJSON();
+	const tree = renderer.create(<Home navigation={navigation} list={list} />).toJSON();
 	expect(tree).toMatchSnapshot();
 });

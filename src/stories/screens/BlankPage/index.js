@@ -6,7 +6,9 @@ import styles from "./styles";
 export interface Props {
 	navigation: any,
 }
-export interface State {}
+export interface State {
+	navigation: any,
+}
 class BlankPage extends React.Component<Props, State> {
 	render() {
 		const param = this.props.navigation.state.params;
