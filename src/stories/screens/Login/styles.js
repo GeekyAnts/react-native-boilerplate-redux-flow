@@ -1,10 +1,8 @@
-const React = require("react-native");
-
-const { Dimensions } = React;
+import { Dimensions, StyleSheet } from "react-native";
 
 const deviceHeight = Dimensions.get("window").height;
 
-export default {
+const styles: any = StyleSheet.create({
 	container: {
 		position: "absolute",
 		top: 0,
@@ -15,8 +13,8 @@ export default {
 	},
 	shadow: {
 		flex: 1,
-		width: null,
-		height: null,
+		width: undefined,
+		height: undefined,
 	},
 	bg: {
 		flex: 1,
@@ -34,4 +32,5 @@ export default {
 		marginTop: 20,
 		alignSelf: "center",
 	},
-};
+});
+export default styles;
