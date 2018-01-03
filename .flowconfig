@@ -8,3 +8,4 @@
 [lints]
 
 [options]
+esproposal.decorators=ignore
