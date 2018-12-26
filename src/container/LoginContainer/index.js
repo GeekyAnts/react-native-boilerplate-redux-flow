@@ -22,6 +22,7 @@ const alphaNumeric = value =>
 
 export interface Props {
   navigation: any;
+  valid: boolean;
 }
 export interface State {}
 class LoginForm extends React.Component<Props, State> {
